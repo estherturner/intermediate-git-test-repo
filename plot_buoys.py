@@ -5,6 +5,10 @@ import pandas as pd
 
 
 def plot_buoy_data():
+    '''
+    plots a map of the data buoys found in the data/data_buoys.csv file.
+    Uses data/north_atlantic.geojson as a boundary of the atlantic ocean.
+    '''
 
     north_atlantic = gpd.read_file("data/north_atlantic.geojson")
 
