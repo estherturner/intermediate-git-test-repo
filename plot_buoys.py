@@ -55,4 +55,4 @@ def plot_buoy_data():
 
 
 if __name__ == "__main__":
-    plot_buoy_data()
+    plot_data()
