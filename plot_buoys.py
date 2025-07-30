@@ -4,10 +4,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def plot_buoy_data():
+def plot_buoy_data(figure_name):
     '''
     plots a map of the data buoys found in the data/data_buoys.csv file.
     Uses data/north_atlantic.geojson as a boundary of the atlantic ocean.
+
+    Parameters:
+    figure_name (str): The name of the figure
     '''
 
     north_atlantic = gpd.read_file("data/north_atlantic.geojson")
@@ -51,8 +54,8 @@ def plot_buoy_data():
     labels.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
     ax.add_artist(labels)
     fig.tight_layout()
-    fig.savefig("buoys_plot.png")
+    fig.savefig(figure_name)
 
 
 if __name__ == "__main__":
-    plot_data()
+    plot_data("bouys_plot.png")
