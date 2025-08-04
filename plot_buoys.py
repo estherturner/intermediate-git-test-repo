@@ -5,6 +5,9 @@ import pandas as pd
 
 
 def plot_buoy_data():
+    """
+    We should have some docstring in here.
+    """
 
     north_atlantic = gpd.read_file("data/north_atlantic.geojson")
 
