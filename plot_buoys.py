@@ -1,7 +1,7 @@
 import geopandas as gpd
-from matplotlib.offsetbox import AnchoredText
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.offsetbox import AnchoredText
 
 
 def plot_buoy_data():
