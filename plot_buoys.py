@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def plot_buoy_data():
+def load_and_plot_buoy_data():
 
     north_atlantic = gpd.read_file("data/north_atlantic.geojson")
 
@@ -51,4 +51,4 @@ def plot_buoy_data():
 
 
 if __name__ == "__main__":
-    plot_buoy_data()
+    load_and_plot_buoy_data()
