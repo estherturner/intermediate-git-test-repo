@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def plot_buoy_data_around_uk():
+def load_and_plot_buoy_data():
 
     # Added a comment
     
@@ -55,4 +55,4 @@ def plot_buoy_data_around_uk():
 
 
 if __name__ == "__main__":
-    plot_buoy_data_around_uk() # Load and plot buoy locations
+    load_and_plot_buoy_data() # Load and plot buoy locations
